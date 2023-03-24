@@ -45,3 +45,6 @@ frutas=sorted([
       "Rambután",
       "Tamarillo",
       ])
+
+default_comercial_dim=50
+default_bin_size=5

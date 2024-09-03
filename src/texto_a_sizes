@@ -1,0 +1,21 @@
+  fig = go.Figure()
+  fig.add_trace(datos.chart_scatter_go())
+  fig.add_trace(datos.chart_scatter_go('UNDER'))
+  fig.add_trace(datos.chart_scatter_go('COM'))
+  fig.add_annotation(x=datos.get_mean(), y=datos.get_mean(),
+              text= f'Full mean = {round(datos.get_mean(),2)}',
+              font=dict(color = 'Blue'),
+              showarrow=True,
+              arrowhead=0)
+  fig.add_annotation(x=datos.get_mean("UNDER"), y=datos.get_mean("UNDER"),
+              text= f'Industry mean = {round(datos.get_mean("UNDER"),2)}',
+              font=dict(color = 'Red'),
+              showarrow=True,
+              arrowhead=0)
+  fig.add_annotation(x=datos.get_mean("COM"), y=datos.get_mean("COM"),
+              text= f'Commercial mean = {round(datos.get_mean("COM"),2)}',
+              font=dict(color = 'Green'),
+              showarrow=True,
+              arrowhead=0)
+
+  fig.show()

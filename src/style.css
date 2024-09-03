@@ -1,0 +1,7 @@
+/*assets/style.css*/
+
+.Select--multi .Select-value {
+    background-color: green;
+    border-color: #e3a700;
+    color: orange;
+}
